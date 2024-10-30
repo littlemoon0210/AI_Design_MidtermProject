@@ -32,7 +32,7 @@ Denpendencies:
 - tqdm for progress bars < 3
 
 ## Quick Start
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1XDpMZCA5FCQetllP5f6gYuyKL-Jra-ZD?usp=drive_link)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com)
 
 First, navigate to the folder where you keep your projects and clone this repository to this folder:
 
@@ -47,7 +47,7 @@ cd AI_Design_MidtermProject
 ```
 Now, let's start training nanoGPT step by step. Run `downloadDataset.py` to load the dataset into the corresponding folder like `/data/tinystories`.Since we have already saved the **checkpoint**, if you don't have GPU and you have successfully downloaded the **checkpoint**, you can run `python sample.py` directly.
 ```bash
-python ./data/tinystories/downlaodDataset.py
+python downlaodDataset.py
 ```
 You can modify the code to download the corresponding dataset.
 ```bash
@@ -57,12 +57,12 @@ ds = load_dataset("roneneldan/TinyStories")
 # Define the output file path
 output_file = "/data/tinytories/TinyStories.txt"
 ```
-Run `prepare.py` to process the text dataset, split it into train and val parts, and save them as binary files.Since the TinyStories.txt dataset is quite large and resources are limited, we only used 472,814 tokens for training and 45,726 tokens for validation. If conditions allow, you can modify the code in prepare.py to adjust the training and validation split.
+Run `prepare.py` to process the text dataset, split it into train and val parts, and save them as binary files.Since the TinyStories.txt dataset is quite large and resources are limited, we only used 472,814 tokens for training and 45,726 tokens for validation. If conditions allow, you can modify the code in `prepare.py` to adjust the training and validation split.
 ```bash
 python ./data/tinystories/prepare.py
 ```
 
-Then,train the model.To achieve better model training, you need a GPU. If you don't have one, consider using Google's Colab.
+Then,train the model. To achieve better model training, you need a GPU. If you don't have one, consider using Google's Colab.
 ```bash
 python train.py
 ```

@@ -4,7 +4,7 @@ from datasets import load_dataset
 ds = load_dataset("roneneldan/TinyStories")
 
 # Define the output file path
-output_file = "TinyStories.txt"
+output_file = "./data/tinystories/TinyStories.txt"
 
 # Open the file and write the content
 with open(output_file, "w", encoding="utf-8") as f:
