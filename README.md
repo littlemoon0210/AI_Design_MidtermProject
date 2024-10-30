@@ -95,4 +95,4 @@ Due to limited resources, we only trained for 2000 iterations, but the results a
 ## Remark
 1. This project is implemented based on nanoGPT, and we modified the `model.py` of nanoGPT by referring to the structure of LLaMA, such as choosing **RMSNorm** instead of **LayerNorm** as well as changes to the way datasets are loaded. In `train.py`, code is provided to support both GPU-only environments.
 2. The dataset `TinyStories` is too large, so we divided it into smaller subsets, which significantly affected the training results.
-3. We initially conducted training on a Chinese dataset, but the results were not very good. The output samples, source code, and related files are in `NanoGPT_Chinese.zip`.
+3. We initially conducted training on a Chinese dataset and the code is provided to support CPU and GPU. But the results were not very good. If you are interested, you can obtain the relevant source code and files from another repository https://github.com/littlemoon0210/AI_Design_Project.
